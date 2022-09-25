@@ -1,3 +1,6 @@
+@section('title')
+    Larashop - Dashboard
+@endsection
 @extends('layouts.appadmin');
 
 @section('content')
@@ -243,5 +246,9 @@
             </div>
             <!-- content-wrapper ends -->
 @endsection
-
+@section('scripts')
+<!-- Custom js for this page-->
+<script src="backoffice/js/dashboard.js"></script>
+<!-- End custom js for this page-->
+@endsection
 

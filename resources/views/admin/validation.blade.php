@@ -1,11 +1,15 @@
-@extends('layouts.appadmin');
+@extends('layouts.appadmin');`
+
+@section('title')
+    Ajouter Catégorie
+@endsection
 
 
 @section('content')
           <!-- partial -->
           <div class="main-panel">
             <div class="content-wrapper">
-              <div class="row grid-margin">
+{{--               <div class="row grid-margin">
                 <div class="col-12">
                   <div class="card">
                     <div class="card-body">
@@ -45,7 +49,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> --}}
 
 
               <div class="row grid-margin">
@@ -80,7 +84,7 @@
               </div>
 
 
-              <div class="row">
+{{--               <div class="row">
                 <div class="col-lg-12">
                   <div class="card">
                     <div class="card-body">
@@ -117,7 +121,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> --}}
             </div>
             <!-- content-wrapper ends -->
             <!-- partial:../../partials/_footer.html -->

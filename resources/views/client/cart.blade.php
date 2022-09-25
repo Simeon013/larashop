@@ -1,7 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>LaraShop - Cart</title>
+@section('title')
+    Larashop - Cart
+@endsection
 
     @extends('layouts.app1');
 

@@ -29,4 +29,6 @@ Route::get('/admin', 'App\Http\Controllers\AdminController@dashboard');
 Route::get('/datatables', 'App\Http\Controllers\AdminController@datatables');
 Route::get('/validation', 'App\Http\Controllers\AdminController@validation');
 
+Route::get('/addcategory', 'App\Http\Controllers\CategoryController@addcategory');
+
 ?>
