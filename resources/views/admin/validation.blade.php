@@ -1,4 +1,4 @@
-@extends('layouts.appadmin');`
+@extends('layouts.appadmin')
 
 @section('title')
     Ajouter Catégorie

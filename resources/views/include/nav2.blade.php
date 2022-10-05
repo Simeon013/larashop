@@ -1,7 +1,7 @@
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <ul class="nav">
       <li class="nav-item">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="{{URL::to('dashboard')}}">
           <i class="ti-home menu-icon"></i>
           <span class="menu-title">Dashboard</span>
         </a>
@@ -14,10 +14,9 @@
         </a>
         <div class="collapse" id="form-elements">
           <ul class="nav flex-column sub-menu">
-            <li class="nav-item"><a class="nav-link" href="basic_elements.html">Ajouter catégorie</a></li>
-            <li class="nav-item"><a class="nav-link" href="advanced_elements.html">Ajouter produit</a></li>
-            <li class="nav-item"><a class="nav-link" href="validation.html">Ajouter slider</a></li>
-{{--             <li class="nav-item"><a class="nav-link" href="wizard.html">Wizard</a></li> --}}
+            <li class="nav-item"><a class="nav-link" href="{{URL::to('addcategory')}}">Ajouter catégorie</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{URL::to('addproduct')}}">Ajouter produit</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{URL::to('addslider')}}">Ajouter slider</a></li>
           </ul>
         </div>
       </li>

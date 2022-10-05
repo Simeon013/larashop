@@ -1,7 +1,7 @@
 @section('title')
     Larashop - Shop
 @endsection
-    @extends('layouts.app1');
+    @extends('layouts.app1')
 
     @section('content')
     <div class="hero-wrap hero-bread" style="background-image: url('frontend/images/bg_1.jpg');">

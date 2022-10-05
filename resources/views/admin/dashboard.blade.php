@@ -1,10 +1,9 @@
 @section('title')
     Larashop - Dashboard
 @endsection
-@extends('layouts.appadmin');
+@extends('layouts.appadmin')
 
 @section('content')
-            <div class="content-wrapper">
               <div class="row">
                 <div class="col-md-12 grid-margin">
                   <div class="row">
@@ -243,8 +242,6 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <!-- content-wrapper ends -->
 @endsection
 @section('scripts')
 <!-- Custom js for this page-->

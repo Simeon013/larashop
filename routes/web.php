@@ -25,10 +25,20 @@ Route::get('/checkout', 'App\Http\Controllers\ClientController@checkout');
 Route::get('/client_login', 'App\Http\Controllers\ClientController@client_login');
 Route::get('/signup', 'App\Http\Controllers\ClientController@signup');
 
-Route::get('/admin', 'App\Http\Controllers\AdminController@dashboard');
+Route::get('/dashboard', 'App\Http\Controllers\AdminController@dashboard');
 Route::get('/datatables', 'App\Http\Controllers\AdminController@datatables');
 Route::get('/validation', 'App\Http\Controllers\AdminController@validation');
 
-Route::get('/addcategory', 'App\Http\Controllers\CategoryController@addcategory');
+Route::get('/addcategory' , 'App\Http\Controllers\CategoryController@addcategory');
+Route::post('/savecategory' , 'App\Http\Controllers\CategoryController@savecategory');
+Route::get('/categories' , 'App\Http\Controllers\CategoryController@categories');
+
+Route::get('/addproduct' , 'App\Http\Controllers\ProductController@addproduct');
+Route::post('/saveproduct' , 'App\Http\Controllers\ProductController@saveproduct');
+Route::get('/produits' , 'App\Http\Controllers\ProductController@produits');
+
+
+Route::get('/addslider' , 'App\Http\Controllers\SliderController@addslider');
+Route::post('/saveslider' , 'App\Http\Controllers\SliderController@saveslider');
 
 ?>

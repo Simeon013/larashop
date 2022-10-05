@@ -79,7 +79,7 @@
 <script src="frontend/js/main.js"></script>
 
 
-@yield('scripts');
+@yield('scripts')
 
 </body>
 </html>

@@ -1,7 +1,7 @@
 @section('title')
     Larashop
 @endsection
-    @extends('layouts.app1');
+    @extends('layouts.app1')
 
     @section('content')
     <section id="home-section" class="hero">
