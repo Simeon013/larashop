@@ -14,4 +14,8 @@ class SliderController extends Controller
     public function saveslider(Request $request){
 
     }
+
+    public function sliders(){
+        return view('admin.sliders');
+    }
 }

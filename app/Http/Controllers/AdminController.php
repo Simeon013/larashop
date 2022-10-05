@@ -10,6 +10,10 @@ class AdminController extends Controller
         return view('admin.dashboard');
     }
 
+    public function commandes(){
+        return view('admin.commandes');
+    }
+
     public function datatables(){
         return view('admin.datatables');
     }

@@ -26,6 +26,7 @@ Route::get('/client_login', 'App\Http\Controllers\ClientController@client_login'
 Route::get('/signup', 'App\Http\Controllers\ClientController@signup');
 
 Route::get('/dashboard', 'App\Http\Controllers\AdminController@dashboard');
+Route::get('/commandes' , 'App\Http\Controllers\AdminController@commandes');
 Route::get('/datatables', 'App\Http\Controllers\AdminController@datatables');
 Route::get('/validation', 'App\Http\Controllers\AdminController@validation');
 
@@ -40,5 +41,7 @@ Route::get('/produits' , 'App\Http\Controllers\ProductController@produits');
 
 Route::get('/addslider' , 'App\Http\Controllers\SliderController@addslider');
 Route::post('/saveslider' , 'App\Http\Controllers\SliderController@saveslider');
+Route::get('/sliders' , 'App\Http\Controllers\SliderController@sliders');
+
 
 ?>

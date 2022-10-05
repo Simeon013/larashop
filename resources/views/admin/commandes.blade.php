@@ -1,12 +1,12 @@
 @section('title')
-    Larashop - Catégories
+    Larashop - Commandes
 @endsection
 @extends('layouts.appadmin')
 
 @section('content')
 <div class="card">
     <div class="card-body">
-      <h4 class="card-title">Liste des catégories</h4>
+      <h4 class="card-title">Liste des Commandes</h4>
       <div class="row">
         <div class="col-12">
           <div class="table-responsive">
@@ -14,24 +14,28 @@
               <thead>
                 <tr>
                     <th>Order #</th>
-                    <th>Nom de la catégorie</th>
+                    <th>Nom du client</th>
+                    <th>Adresse</th>
+                    <th>Panier</th>
+                    <th>Payment id</th>
                     <th>Actions</th>
                 </tr>
               </thead>
               <tbody>
-                @foreach ($categories as $category)
                 <tr>
-                    <td>{{$category->id}}</td>
-                    <td>{{$category->category_name}}</td>
+                    <td>1</td>
+                    <td>Alimentaire</td>
+                    <td>Alimentaire</td>
+                    <td>Alimentaire</td>
+                    <td>Alimentaire</td>
                     {{-- <td>
                       <label class="badge badge-info">On hold</label>
                     </td> --}}
                     <td>
-                      <button class="btn btn-outline-primary">Editer</button>
-                      <button class="btn btn-outline-danger">Supprimer</button>
+                        <button class="btn btn-outline-primary">Editer</button>
+                        {{-- <button class="btn btn-outline-danger">Supprimer</button> --}}
                     </td>
                 </tr>
-                @endforeach
               </tbody>
             </table>
           </div>
