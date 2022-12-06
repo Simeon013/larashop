@@ -7,16 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>@yield('title')</title>
   <!-- plugins:css -->
-  <link rel="stylesheet" href="backoffice/css/themify-icons.css">
-  <link rel="stylesheet" href="backoffice/css/vendor.bundle.base.css">
-  <link rel="stylesheet" href="backoffice/css/vendor.bundle.addons.css">
+  <link rel="stylesheet" href="{{asset('backoffice/css/themify-icons.css')}}">
+  <link rel="stylesheet" href="{{asset('backoffice/css/vendor.bundle.base.css')}}">
+  <link rel="stylesheet" href="{{asset('backoffice/css/vendor.bundle.addons.css')}}">
   <!-- endinject -->
   <!-- plugin css for this page -->
   <!-- End plugin css for this page -->
   <!-- inject:css -->
-  <link rel="stylesheet" href="backoffice/css/style.css">
+  <link rel="stylesheet" href="{{asset('backoffice/css/style.css')}}">
   <!-- endinject -->
-  <link rel="shortcut icon" href="backoffice/images/logo_2H_tech.png" />
+  <link rel="shortcut icon" href="{{asset('backoffice/images/logo_2H_tech.png')}}" />
 </head>
 <body>
   <div class="container-scroller">
@@ -54,21 +54,35 @@
 <!-- container-scroller -->
 
 <!-- plugins:js -->
-<script src="backoffice/js/vendor.bundle.base.js"></script>
-<script src="backoffice/js/vendor.bundle.addons.js"></script>
+<script src="{{asset('backoffice/js/vendor.bundle.base.js')}}"></script>
+<script src="{{asset('backoffice/js/vendor.bundle.addons.js')}}"></script>
 <!-- endinject -->
 <!-- Plugin js for this page-->
 <!-- End plugin js for this page-->
 <!-- inject:js -->
-<script src="backoffice/js/off-canvas.js"></script>
-<script src="backoffice/js/hoverable-collapse.js"></script>
-<script src="backoffice/js/template.js"></script>
-<script src="backoffice/js/settings.js"></script>
-<script src="backoffice/js/todolist.js"></script>
+<script src="{{asset('backoffice/js/off-canvas.js')}}"></script>
+<script src="{{asset('backoffice/js/hoverable-collapse.js')}}"></script>
+<script src="{{asset('backoffice/js/template.js')}}"></script>
+<script src="{{asset('backoffice/js/settings.js')}}"></script>
+<script src="{{asset('backoffice/js/todolist.js')}}"></script>
+<script src="{{asset('backoffice/js/bootbox.min.js')}}"></script>
+
 <!-- endinject -->
 <!-- Custom js for this page-->
     @yield('scripts')
 <!-- End custom js for this page-->
+
+<script>
+    $(document).on("click", "#delete", function(e){
+        e.preventDefault();
+        var link = $(this).attr("href");
+        bootbox.confirm("Voullez-vous vraiment supprimer ce élement ?" , function(confirmed){
+            if(confirmed){
+                window.location.href = link;
+            };
+        });
+    });
+</script>
 </body>
 
 </html>
