@@ -30,17 +30,19 @@ Route::get('/commandes' , 'App\Http\Controllers\AdminController@commandes');
 Route::get('/datatables', 'App\Http\Controllers\AdminController@datatables');
 Route::get('/validation', 'App\Http\Controllers\AdminController@validation');
 
-Route::get('/editcategory/{id}' , 'App\Http\Controllers\CategoryController@editcategory');
-Route::post('/updatecategory' , 'App\Http\Controllers\CategoryController@updatecategory');
 Route::get('/addcategory' , 'App\Http\Controllers\CategoryController@addcategory');
 Route::post('/savecategory' , 'App\Http\Controllers\CategoryController@savecategory');
 Route::get('/categories' , 'App\Http\Controllers\CategoryController@categories');
+Route::get('/editcategory/{id}' , 'App\Http\Controllers\CategoryController@editcategory');
+Route::post('/updatecategory' , 'App\Http\Controllers\CategoryController@updatecategory');
 Route::get('/deletecategory/{id}' , 'App\Http\Controllers\CategoryController@deletecategory');
 
 Route::get('/addproduct' , 'App\Http\Controllers\ProductController@addproduct');
 Route::post('/saveproduct' , 'App\Http\Controllers\ProductController@saveproduct');
 Route::get('/produits' , 'App\Http\Controllers\ProductController@produits');
-
+Route::get('/editproduct/{id}' , 'App\Http\Controllers\ProductController@editproduct');
+Route::post('/updateproduct' , 'App\Http\Controllers\ProductController@updateproduct');
+Route::get('/deleteproduct/{id}' , 'App\Http\Controllers\ProductController@deleteproduct');
 
 Route::get('/addslider' , 'App\Http\Controllers\SliderController@addslider');
 Route::post('/saveslider' , 'App\Http\Controllers\SliderController@saveslider');
