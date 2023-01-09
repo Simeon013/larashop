@@ -59,7 +59,13 @@
                         <td>
                             <button class="btn btn-outline-primary" onclick="window.location ='{{URL('/editproduct/'.$product->id)}}'">Editer</button>
                             <button class="btn btn-outline-danger"><a href="{{('/deleteproduct/'.$product->id)}}" id="delete">Supprimer</a></button>
-                          </td>
+
+                            @if ($product->status == 1)
+                                <button class="btn btn-outline-warning" onclick="window.location ='{{URL('/desactiverproduct/'.$product->id)}}'">Désactiver</button>
+                            @else
+                                <button class="btn btn-outline-success" onclick="window.location ='{{URL('/activerproduct/'.$product->id)}}'">Activer</button>
+                            @endif
+                        </td>
                     </tr>
                     {!! Form::hidden('', $increment= $increment+1) !!}
                 @endforeach
